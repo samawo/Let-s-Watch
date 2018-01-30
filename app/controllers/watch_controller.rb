@@ -5,10 +5,11 @@ class WatchController < ApplicationController
   end
   
   def create
-    render 'show'
+    render :show
   end
 
   def show
     @page_title="タイムライン"
+    @param="test"
   end
 end
