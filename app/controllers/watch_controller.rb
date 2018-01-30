@@ -11,5 +11,7 @@ class WatchController < ApplicationController
   def show
     @page_title="タイムライン"
     @param="test"
+    
+    
   end
 end
