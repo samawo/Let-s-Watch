@@ -1,0 +1,2 @@
+class UhRelationship < ApplicationRecord
+end
