@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get 'watch/show'
   get 'watch', to: "watch#new"
 
-  devise_for :users
+  devise_for :users, controllers: {
+    omniauth_callbacks: "users/omniauth_callbacks"
+  }
   root 'top#index'
   
   get 'top/index'
