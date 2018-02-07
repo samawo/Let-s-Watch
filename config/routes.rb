@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'watch/new'
   post 'watch/create'
   get 'watch/show'
+  get 'watch', to: "watch#new"
 
   devise_for :users
   root 'top#index'
